@@ -1,3 +1,6 @@
+const eqArrays = require("./eqArrays");
+const assertArraysEqual = require("./assertArraysEqual");
+
 const flatten = function (array) {
   resultsArray = [];
   for (const item of array) {
@@ -11,3 +14,5 @@ const flatten = function (array) {
   }
   return resultsArray;
 };
+
+module.exports = flatten;

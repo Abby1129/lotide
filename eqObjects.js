@@ -1,5 +1,7 @@
 //requires eqArray.js func
 //requires assertEqual.js func
+const eqArrays = require("./eqArrays");
+const assertEqual = require("./assertEqual");
 
 const eqObjects = function (object1, object2) {
   if (JSON.stringify(object1).length !== JSON.stringify(object2).length) {
@@ -15,3 +17,5 @@ const eqObjects = function (object1, object2) {
   }
   return true;
 };
+
+module.exports = eqObjects;

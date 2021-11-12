@@ -1,3 +1,6 @@
+const eqArrays = require("./eqArrays");
+const assertArraysEqual = require("./assertArraysEqual");
+
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
@@ -5,3 +8,5 @@ const map = function (array, callback) {
   }
   return results;
 };
+
+module.exports = map;

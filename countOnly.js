@@ -1,3 +1,5 @@
+const assertEqual = require("./assertEqual");
+
 const countOnly = function (allItems, itemsToCount) {
   const results = {};
 
@@ -14,9 +16,4 @@ const countOnly = function (allItems, itemsToCount) {
   return results;
 };
 
-// input are: array and object
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
-// declare a results object which is empty
-// loop through all the items
-// if the item is found in the itemsToCount object, increment count into the results object, else return 1
+module.exports = countOnly;

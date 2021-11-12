@@ -1,4 +1,6 @@
-// requires eqObjects.js func
+const eqArrays = require("./eqArrays");
+const eqObjects = require("./eqObjects");
+
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require("util").inspect;
   if (eqObjects(actual, expected)) {
@@ -11,3 +13,5 @@ const assertObjectsEqual = function (actual, expected) {
     );
   }
 };
+
+module.exports = assertObjectsEqual;
