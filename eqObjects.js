@@ -1,5 +1,3 @@
-//requires eqArray.js func
-//requires assertEqual.js func
 const eqArrays = require("./eqArrays");
 const assertEqual = require("./assertEqual");
 
